@@ -7,10 +7,8 @@ export default function EditPost() {
     const [userContent, setUserContent] = useState<string>("")
     const [userTitle, setUserTitle] = useState<string>("")
 
-    const location = useLocation()
+    const { id } = useParams()
     const navigate = useNavigate()
-
-    const id = location.state.id
 
     useEffect(() => {
         fetchData()

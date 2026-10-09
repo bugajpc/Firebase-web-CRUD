@@ -34,13 +34,7 @@ export default function Posts() {
     }
 
     const handleEdit = (id: string) => {
-        navigate("/edit-post", 
-            {
-                state: {
-                    id: id
-                }
-            }
-        )
+        navigate("/edit-post/" + id)
     }
 
     return (
